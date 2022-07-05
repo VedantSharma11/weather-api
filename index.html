@@ -5,12 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather API</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+         }
+         body{ 
+           font-family:cursive;
+           background: #34495e;
+        }
+        .box{
+            width: 300px;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            background: #191919;
+            text-align: center;
+            border-radius: 12px;
+        }
+        h4{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #FFF;
+            padding: 10px;
+        }
+        .box h1{
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        .box input{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            outline: none;
+            color: #fff;
+            width: 200px;
+            padding: 14px 10px;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .box input:focus{
+            width: 280px;
+            border-color: #2ecc71; 
+        }
+        .box button{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            outline: none;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        .box button:hover{
+            background: #2ecc71;
+        }
+
+    </style>
 </head>
 <body>
-    <form action="/" method="post">
-        <label for="cityinput">ENTER YOUR CITY =></label>
-        <input type="text"  id="cityinput" name="cityname">
+    <form class="box" action="/" method="post">
+        <h1>WEATHER  API</h1>
+        <input type="text"  id="cityinput" name="cityname" placeholder="Enter City Name">
         <button type="submit">Go</button>
     </form>
+    <h4>© VedantSharma</h4>
 </body>
 </html>
